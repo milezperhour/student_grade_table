@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+</head>
+<body>
+<div class="container-fluid col-md-offset-1 col-md-10 col-md-offset-1 col-xs-12" id="bootstrap_grids">
+    <div class="">
+        <!-- only show this element when the isnt on mobile -->
+        <h1 class="hidden-xs hidden-sm page-header">Student Grade Table
+            <small class="col-md-3 col-md-offset-1 hidden-xs pull-right">Grade Average : <span class="avgGrade"><span class="label label-default"></span></span></small>
+        </h1>
+
+        <!-- only show this element when the user gets to a mobile version -->
+        <h3 class="col-xs-12 hidden-lg hidden-md page-header">Student Grade Table
+            <small class="hidden-md hidden-lg pull-right">Grade Average : <span class="avgGrade"><span class="label label-default"></span></span></small>
+        </h3>
+    </div>
+    <div class="student-add-form col-md-3 pull-right col-xs-12">
+        <h4>Add Student</h4>
+        <div class="input-group form-group">
+            <span class="input-group-addon" id="basic-addon1">
+                <span class="glyphicon glyphicon-user"></span>
+            </span>
+            <input type="text" class="form-control" name="name" id="studentName" placeholder="Student Name">
+        </div>
+        <div class="input-group form-group">
+            <span class="input-group-addon" id="basic-addon1">
+                <span class="glyphicon glyphicon-list-alt"></span>
+            </span>
+            <input type="text" class="form-control" name="course" id="studentCourse"
+                   placeholder="Student Course">
+        </div>
+        <div class="input-group form-group">
+            <span class="input-group-addon" id="basic-addon1">
+                <span class="glyphicon glyphicon-education"></span>
+            </span>
+            <input type="text" class="form-control" name="grade" id="studentGrade"
+                   placeholder="Student Grade">
+        </div>
+        <button type="button" class="btn btn-success add btn-grid" onclick="">Add</button>
+        <button type="button" class="btn btn-default cancel btn-grid" onclick="">Cancel</button>
+        <button type="button" class="btn btn-primary getData btn-grid">Get Data</button>
+    </div>
+    <div class="pull-left col-md-9 col-xs-12">
+        <table class="student-list table">
+            <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Student Course</th>
+                <th>Student Grade</th>
+                <th>Operations</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--<tr>-->
+                <!--<td>Miles</td>-->
+                <!--<td>Math</td>-->
+                <!--<td>90</td>-->
+                <!--<td><button type="button" class="btn btn-danger">Delete</button></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>Emily</td>-->
+                <!--<td>Biology</td>-->
+                <!--<td>95</td>-->
+                <!--<td><button type="button" class="btn btn-danger">Delete</button></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>Evelyn</td>-->
+                <!--<td>Chemistry</td>-->
+                <!--<td>100</td>-->
+                <!--<td><button type="button" class="btn btn-danger delete">Delete</button></td>-->
+            <!--</tr>-->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal" id="resultModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
